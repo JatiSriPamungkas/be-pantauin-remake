@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const pool = mysql.createPool({
+export const dbPool = mysql.createPool({
     host: process.env.EXPRESS_HOST,
     user: process.env.EXPRESS_USER,
     password: process.env.EXPRESS_PASSWORD,
