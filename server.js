@@ -4,7 +4,7 @@ const app = express();
 const PORT = 5000;
 
 app.get("/", (req, res) => {
-    res.send("<h1>Hello World!</h1>");
+    res.send("<h1>Welcome to Pantauin API!</h1>");
 });
 
 app.use((req, res) => {
