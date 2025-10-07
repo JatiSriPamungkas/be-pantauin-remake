@@ -5,3 +5,9 @@ export const getUsers = () => {
 
     return dbPool.execute(SQLQuery);
 };
+
+export const getUsersByUsername = (username) => {
+    const SQLQuery = `SELECT * FROM users WHERE username = ?;`;
+
+    return dbPool.execute(SQLQuery, [username]);
+};
